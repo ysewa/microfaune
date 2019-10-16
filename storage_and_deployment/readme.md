@@ -8,15 +8,27 @@ Participants: Ysé
 Storage of the Microfaune DB (alternatives with prices).
 
 - For the Bird Audio Detection Challenge, data are stored on Figshare and Archive.
+- suggestions made by other: BlackBlaze
+- AWS bucket (TODO: check for pricing)
+- GCP storage (TODO: check for pricing)
 
 ## Model storage
 
 Back-end hosting for deployment. Choose tech etc.
 
+### GRPC Service
+gRPC application is a Backend Service created by Google. 
+Very efficient. With a typed protocol, we can exchange bytes data  (audio, a wav files) and streaming data (microphone)
+For more info. See https://gRPC.io/
 
 ## Model Deployment
 
-Several alternatives are considered.
+Several alternatives are considered:
+- in local, use a Makefile and bash script
+- if complexe data proprecssing, use Airflow
+- use circleci or travis for automation 
+
+Model is stored in the repository (if small enough or in a storage)
 
 ### Upload audio file
 
